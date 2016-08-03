@@ -18,6 +18,7 @@ for line in $(git diff --cached --name-status); do
             if [ $? -gt 0 ]; then
                 echo -e "\033[31mAborted due to warnings:\033[0m "
                 echo " [FILE: $filename] ${PYTHON_LINT##/*/} 를 통과하지 못 했습니다."
+                echo " --no-verify 옵션을 사용하여 lint 를 건너뛸 수 있습니다."
                 exit 1
             fi
         fi
@@ -28,6 +29,7 @@ for line in $(git diff --cached --name-status); do
             if [ $? -gt 0 ]; then
                 echo -e "\033[31mAborted due to warnings:\033[0m "
                 echo " [FILE: $filename] ${JS_LINT##/*/} 를 통과하지 못 했습니다."
+                echo " --no-verify 옵션을 사용하여 lint 를 건너뛸 수 있습니다."
                 exit 1
             fi
         fi
@@ -39,6 +41,7 @@ for line in $(git diff --cached --name-status); do
             if [ $? -gt 0 ]; then
                 echo -e "\033[31mAborted due to warnings:\033[0m "
                 echo " [FILE: $filename] ${CSS_LINT##/*/} 를 통과하지 못 했습니다."
+                echo " --no-verify 옵션을 사용하여 lint 를 건너뛸 수 있습니다."
                 exit 1
             fi
         fi
