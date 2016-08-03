@@ -2,8 +2,10 @@
 
 import time
 
+
 def timestamp():
     return time.time()
+
 
 if __name__ == '__main__':
     print timestamp()
