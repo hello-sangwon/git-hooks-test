@@ -1,5 +1,5 @@
 #!/bin/bash
-# cp git-hooks/pre-push .git/hooks/pre-push; chmod 700 .git/hooks/pre-push
+# cp git-hooks/pre-push.sh .git/hooks/pre-push; chmod a+x .git/hooks/pre-push
 
 protected_branch='master'
 
