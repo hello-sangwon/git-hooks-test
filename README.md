@@ -1,4 +1,4 @@
-# git-hooks test
+# git-hooks-test
 
 ## 설치 방법
 ```shell
