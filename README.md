@@ -1,5 +1,8 @@
 # git-hooks-test
 
+## 목적
+* github flow 연습
+
 ## 설치 방법
 ```shell
 $ pip install pep8
