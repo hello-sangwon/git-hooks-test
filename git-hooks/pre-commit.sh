@@ -1,5 +1,5 @@
 #!/bin/bash
-# cp git-hooks/pre-commit.sh .git/hooks/pre-commit; chmod 700 .git/hooks/pre-commit
+# cp git-hooks/pre-commit.sh .git/hooks/pre-commit; chmod a+x .git/hooks/pre-commit
 
 PYTHON_LINT=`which pep8`
 JS_LINT=`which jslint`
